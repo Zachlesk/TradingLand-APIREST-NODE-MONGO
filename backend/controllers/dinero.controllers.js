@@ -1,4 +1,4 @@
-import Dineros from "../models/Dinero.js";
+import Dineros from "../models/Dineros.js";
 
 const getDineros = async (req, res)=>{
     const dineros = await Dineros.find();

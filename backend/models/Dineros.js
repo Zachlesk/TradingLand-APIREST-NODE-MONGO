@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const dineroSchema = mongoose.Schema({
+const dinerosSchema = mongoose.Schema({
     criptomonedas: {
         type: String,
         require: true,
@@ -17,6 +17,6 @@ const dineroSchema = mongoose.Schema({
 }
 );
 
-const Dineros = mongoose.model("dineros", dineroSchema);
+const Dineros = mongoose.model("dineros", dinerosSchema);
 
 export default Dineros;

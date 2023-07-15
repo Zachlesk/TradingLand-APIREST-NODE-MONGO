@@ -6,7 +6,7 @@ const conexion = async () =>{
             useNewUrlParser:true,
             useUnifiedTopology:true,
         });
-        const url = `CONECTADO A MONGODB EN EL SERVER: ${conexionDB.connection.host} - EN PUERTO: ${conexionDB.connection.port}`;
+        const url = `Ha sido conectado existosamente a Mongo.DB en el server: ${conexionDB.connection.host} y en el puerto: ${conexionDB.connection.port}`;
         console.log(url);
     } catch (error) {
         console.log(`${error.message}`);
