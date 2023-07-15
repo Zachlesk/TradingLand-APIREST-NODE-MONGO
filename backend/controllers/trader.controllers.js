@@ -1,7 +1,7 @@
 import Trader from "../models/Trader.js";
 
 const getTraders = async (req, res)=>{
-    const traders = await Traders.find();
+    const traders = await Trader.find();
     res.json(traders);
 };
 

@@ -7,14 +7,15 @@ import traderRoutes from '../routes/trades.routes.js'
 
 class Server {
 
-constructor(){
-    this.app = express();
-    this.port = process.env.PORT;
-    this.middlewares(); 
-    this.routes();
-    this.accionesPath = '/api/acciones';
-    this.dinerosPath = '/api/dineros';
-    this.traderPath = '/api/traders';
+    constructor(){
+        this.app = express();
+        this.port = process.env.PORT;
+        this.accionesPath = '/api/acciones';
+        this.dinerosPath = '/api/dineros';
+        this.traderPath = '/api/traders';
+        this.conexion();
+        this.middlewares(); 
+        this.routes();
 }
 
 async conexion(){
@@ -31,6 +32,7 @@ routes(){
     this.app.use(this.accionesPath, accionesRoutes);
     this.app.use(this.dinerosPath, dinerosRoutes);
     this.app.use(this.traderPath, traderRoutes);
+
 }
 
 listen(){
