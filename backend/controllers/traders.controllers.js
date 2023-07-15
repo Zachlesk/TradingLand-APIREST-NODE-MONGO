@@ -1,4 +1,4 @@
-import Trader from "../models/Trader.js";
+import Trader from "../models/Traders.js";
 
 const getTraders = async (req, res)=>{
     const traders = await Trader.find();

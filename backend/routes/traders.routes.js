@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getTraders, getTrader, postTraders, deleteTraders, putTraders } from '../controllers/trader.controllers.js';
+import { getTraders, getTrader, postTraders, deleteTraders, putTraders } from '../controllers/traders.controllers.js';
 
 const router = Router();
 

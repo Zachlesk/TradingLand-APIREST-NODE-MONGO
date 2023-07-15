@@ -2,8 +2,8 @@ import express from 'express'
 import cors from 'cors'
 import conexion from '../config/config.js'
 import accionesRoutes from '../routes/acciones.routes.js'
-import dinerosRoutes from '../routes/dinero.routes.js'
-import traderRoutes from '../routes/trades.routes.js'
+import dinerosRoutes from '../routes/dineros.routes.js'
+import traderRoutes from '../routes/traders.routes.js'
 
 class Server {
 

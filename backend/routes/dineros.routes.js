@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { getDineros, getDinero, postDineros, deleteDineros, putDineros } from '../controllers/dinero.controllers.js';
+import { getDineros, getDinero, postDineros, deleteDineros, putDineros } from '../controllers/dineros.controllers.js';
 
 const router = Router();
 
